@@ -1,17 +1,27 @@
-from dotenv import load_dotenv
-from rag import load_documents, split_documents, create_vector_store, create_rag_chain
+
+from pathlib import Path
 import os
+from dotenv import load_dotenv
 
-def main():
-    load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
-    print("Groq API key loaded:", bool(os.getenv("GROQ_API_KEY")))  
+from Vector_store.document_loader import load_documents, split_documents
+from Vector_store.retriever import create_vector_store
+from RAG.chain import create_rag_chain
 
-    if not os.path.exists("./chroma_db"):
+
+BASE_DIR = Path(__file__).resolve().parent
+
+def initialize_rag():
+    vector_store_path = BASE_DIR / "chroma_db"
+
+    if not vector_store_path.exists() or not any(vector_store_path.iterdir()):
         documents = load_documents()
         chunks = split_documents(documents)
         create_vector_store(chunks)
 
-    rag_chain = create_rag_chain()
+    return create_rag_chain()
+def main():
+
+    rag_chain = initialize_rag()
 
     while True:
         question = input("\nAsk a question (or type 'exit'): ")
