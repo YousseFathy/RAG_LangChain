@@ -19,6 +19,8 @@ def initialize_rag():
         create_vector_store(chunks)
 
     return create_rag_chain()
+
+
 def main():
 
     rag_chain = initialize_rag()
