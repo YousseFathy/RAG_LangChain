@@ -6,8 +6,7 @@ from Vector_store.embeddings import embeddings
 BASE_DIR = Path(__file__).resolve().parents[1]
 DB_DIR = BASE_DIR / "chroma_db"
 COLLECTION_NAME = "company_documents"
-RETRIEVER_K = 3
-
+RETRIEVER_K = 10
 
 def create_vector_store(chunks):
     return Chroma.from_documents(

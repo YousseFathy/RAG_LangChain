@@ -1,5 +1,128 @@
-Our company was founded in 2020.
-We develop AI software for businesses.
-Our main products include data analytics tools
-and machine learning solutions.
-Our office is located in Cairo, Egypt.
+# NileTech Solutions — Company Knowledge Base
+
+## 1. Company Overview
+
+NileTech Solutions is an Egyptian software company founded in 2020 and headquartered in Cairo, Egypt. The company develops AI-powered business software, data analytics platforms, and machine learning solutions for small, medium, and large enterprises. Its primary markets are Egypt, Saudi Arabia, and the United Arab Emirates.
+
+The company employs 85 people across engineering, data science, sales, marketing, and customer support. The engineering department has 30 employees, while the data science department has 18. The remaining employees work in business operations, sales, marketing, human resources, and customer support.
+
+NileTech's mission is to help businesses make better decisions using reliable data and practical artificial intelligence. The company does not guarantee that its AI predictions will always be accurate, and clients are responsible for reviewing important decisions before acting on automated recommendations.
+
+## 2. Products and Services
+
+NileTech offers three primary products: InsightFlow, ForecastPro, and ClientPulse.
+
+### InsightFlow
+
+InsightFlow is a business analytics platform that allows companies to connect multiple data sources, create interactive dashboards, and monitor key performance indicators. It supports CSV uploads, PostgreSQL databases, and selected REST APIs.
+
+The Standard plan costs EGP 4,000 per month and supports up to five users. The Professional plan costs EGP 9,000 per month and supports up to 20 users. Enterprise pricing is negotiated individually and includes custom integrations.
+
+InsightFlow retains dashboard configurations until the account is deleted. Uploaded source files are retained for 30 days unless the customer configures a shorter retention period. Deleting a dashboard does not automatically delete the underlying source data.
+
+### ForecastPro
+
+ForecastPro provides machine learning forecasts for sales, inventory demand, and operational planning. Customers must provide at least 12 months of historical data for the standard forecasting service. Six months may be accepted for a pilot project, but shorter histories can reduce forecast reliability.
+
+ForecastPro is evaluated using mean absolute error (MAE) and mean absolute percentage error (MAPE), depending on the dataset. MAPE is not reported when actual values contain zeros that make the calculation undefined. The company recommends evaluating forecasts against a simple baseline before deploying them in production.
+
+The Standard plan costs EGP 6,500 per month and includes up to three forecasting models. The Professional plan costs EGP 13,000 per month and includes up to ten models. Additional models require a separate quotation.
+
+Forecasts are estimates, not guarantees. Sudden market changes, missing data, and changes in customer behavior can significantly reduce accuracy.
+
+### ClientPulse
+
+ClientPulse analyzes customer feedback from surveys, support tickets, and approved text sources. It classifies sentiment as positive, neutral, or negative and identifies recurring themes in customer comments.
+
+ClientPulse supports Arabic and English text. However, performance may vary with dialects, sarcasm, spelling mistakes, and mixed-language messages. The system should not be treated as a definitive measure of an individual customer's intentions.
+
+The product costs EGP 5,000 per month for up to 10,000 text records. An additional 10,000 records costs EGP 1,500 per month. Custom integrations are billed separately.
+
+## 3. Subscription and Billing Policies
+
+All standard subscriptions are billed monthly in Egyptian pounds. Prices listed in this document exclude any applicable taxes unless stated otherwise in a signed agreement.
+
+Customers may cancel a subscription at any time. Cancellation prevents renewal at the next billing date, but access remains active until the end of the paid period. NileTech does not ordinarily refund unused days in a billing period.
+
+If a customer upgrades from Standard to Professional, the new plan becomes active immediately. Any prorated charge is calculated according to the remaining time in the billing cycle.
+
+If payment fails, the billing system retries the payment after three days. If the second attempt fails, the account receives a warning and has seven additional days to resolve the payment issue. If payment remains outstanding, access to paid features may be suspended.
+
+Annual contracts are available only to Enterprise customers. Annual discounts, if any, must be specified in the signed contract; sales representatives cannot promise an undocumented discount.
+
+## 4. Customer Support and Service Commitments
+
+Standard customers receive email support during business hours, Sunday through Thursday, from 9:00 AM to 5:00 PM Egypt time. The target initial response time is two business days.
+
+Professional customers receive email and live-chat support during the same business hours. Their target initial response time is eight business hours.
+
+Enterprise customers receive a named account manager and priority incident handling. Specific response and availability commitments are defined in each Enterprise contract.
+
+A response-time target is not a guarantee that an issue will be resolved within that period. Resolution time depends on the complexity of the issue and whether the customer provides the information needed to investigate it.
+
+NileTech's standard service availability target is 99.5% per calendar month for hosted products. Scheduled maintenance announced at least 48 hours in advance is excluded from the availability calculation. The target does not apply to outages caused by customer-managed infrastructure or unsupported third-party services.
+
+## 5. Data Security and Privacy
+
+NileTech encrypts network traffic using TLS and encrypts production database storage at rest. Access to production systems is restricted according to job responsibilities, and privileged access is reviewed periodically.
+
+Customer data is not sold to advertisers. Access to customer content is limited to authorized personnel who require it for support, maintenance, security, or service delivery.
+
+Customers must ensure that they have the legal right to upload the data they provide. They should not upload passwords, payment card security codes, or unrelated sensitive personal information into analytics fields.
+
+Upon account termination, customer data is scheduled for deletion within 60 days unless a longer retention period is required by law or a signed contract. Backup copies may remain until their normal rotation cycle expires.
+
+NileTech conducts internal security reviews quarterly. An independent penetration test is performed annually. These activities reduce security risks but do not eliminate the possibility of a security incident.
+
+## 6. Technical Requirements and Integrations
+
+InsightFlow requires a modern browser and a stable internet connection. PostgreSQL integrations require network access to the database and a user account with the necessary read permissions.
+
+ForecastPro accepts structured CSV files with a date column and at least one numerical target column. Data should be sorted chronologically and checked for duplicate timestamps, missing values, and inconsistent units before upload.
+
+ClientPulse accepts UTF-8 encoded CSV files containing a text column. Each record should have a unique identifier if the customer wants to trace aggregated results back to source records.
+
+Custom integrations usually require two to six weeks after requirements are approved. The estimate may increase if the customer has undocumented APIs, inconsistent source data, or additional security requirements.
+
+## 7. Refunds, Incidents, and Escalations
+
+Billing disputes should be submitted to billing@niletech.example with the invoice number, account email, and a description of the disputed charge. The billing team aims to respond within three business days.
+
+Technical incidents should be reported through the support portal. Enterprise customers should also notify their assigned account manager for critical production incidents.
+
+A customer requesting a refund must provide the reason and relevant transaction details. Refund eligibility is assessed according to the signed agreement and applicable law. The general no-refund rule for unused subscription days does not override any mandatory legal rights.
+
+If an issue remains unresolved after the standard support process, the customer may request escalation to the support manager. Escalation does not automatically guarantee a refund, compensation, or a change to the service agreement.
+
+## 8. Frequently Asked Questions
+
+**Can ForecastPro guarantee that sales will increase?**
+
+No. ForecastPro produces estimates to support planning. Business outcomes depend on decisions, market conditions, data quality, and other factors outside the model's control.
+
+**Can a Standard InsightFlow customer add six more users without upgrading?**
+
+No. The Standard plan supports five users. A customer needing 11 users would need the Professional plan, which supports up to 20 users, or a separately negotiated Enterprise agreement.
+
+**Does cancelling a subscription delete customer data immediately?**
+
+No. Cancellation ends renewal but preserves access until the paid period ends. Following account termination, data is scheduled for deletion within 60 days, subject to legal and contractual exceptions.
+
+**What happens if ForecastPro receives only four months of historical data?**
+
+The standard service requires at least 12 months. A six-month history may be accepted for a pilot, so four months falls below both stated thresholds and would require further discussion with the company.
+
+**Does the 99.5% availability target mean NileTech guarantees there will never be downtime?**
+
+No. It is a monthly service availability target, subject to the stated exclusions and any applicable Enterprise contract.
+
+**Can ClientPulse accurately detect sarcasm in Egyptian Arabic?**
+
+Not reliably in every case. Arabic dialects, sarcasm, spelling variations, and mixed-language text can affect classification performance.
+
+## 9. Internal Reference
+
+Document owner: Operations Department  
+Last reviewed: October 2026  
+Document version: 1.3  
+Policy note: If this document conflicts with a signed customer agreement, the signed agreement takes precedence for that customer. Questions about undocumented exceptions must be escalated to the relevant department rather than answered by guessing.

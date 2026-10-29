@@ -5,8 +5,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-CHUNK_SIZE = 100
-CHUNK_OVERLAP = 20
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 100
 
 def load_documents():
     file_path = BASE_DIR / "documents" / "company_info.txt"
